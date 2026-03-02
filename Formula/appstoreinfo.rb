@@ -7,8 +7,6 @@ class Appstoreinfo < Formula
   sha256 "1612a318f5de0e976d666dc9bbc419521ae6b3e086ac7db985c2e2ab61425a43"
   license "MIT"
 
-  depends_on xcode: ["12.0", :build]
-
   def install
     system "swiftc", "-o", "appstoreinfo", "AppStoreInfo.swift"
     bin.install "appstoreinfo"
