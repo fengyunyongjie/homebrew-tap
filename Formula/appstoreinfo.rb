@@ -4,7 +4,7 @@ class Appstoreinfo < Formula
   desc "A command-line tool to retrieve iOS app bundle identifier from App Store"
   homepage "https://github.com/fengyunyongjie/AppStoreInfo"
   url "https://github.com/fengyunyongjie/AppStoreInfo/archive/v1.0.0.tar.gz"
-  sha256 "30688f2152e5edf3a3ce6f121a4a1c742c868b344dadfb3832516fe6495cb68d"
+  sha256 "1612a318f5de0e976d666dc9bbc419521ae6b3e086ac7db985c2e2ab61425a43"
   license "MIT"
 
   depends_on xcode: ["12.0", :build]
