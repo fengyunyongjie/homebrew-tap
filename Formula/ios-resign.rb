@@ -6,11 +6,10 @@ class IosResign < Formula
     revision: "main"
   version "1.0.0"
 
-  depends_on :xcode
   depends_on macos: :catalina
 
   def install
-    system "swift", "build", "--configuration", "release"
+    system "swift", "build", "-c", "release", "--disable-sandbox"
     bin.install ".build/arm64-apple-macosx/release/ios-resign"
   end
 
